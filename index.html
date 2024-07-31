@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-[#0A599B] grid place-items-center min-h-screen cursor-none select-none" oncontextmenu="return false" ondrop="return false" ondragstart="return false">
-    <section id="t1" class="text-white flex flex-col items-center justify-center gap-4">
+    <section id="t1" class="text-white flex flex-col items-center justify-center gap-4 hidden">
 
         <figure>
             <svg xmlns="http://www.w3.org/2000/svg" class="lds-microsoft" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0)"><circle cx="81.73413361164941" cy="74.35045716034882" fill="#ffffff" r="5" transform="rotate(340.001 49.9999 50)">
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section id="t2" class="container text-white flex flex-row flex-nowrap gap-4 items-center justify-between hidden">
+    <section id="t2" class="container text-white flex flex-row flex-nowrap gap-4 items-center justify-between">
         <section class="flex flex-col gap-1">
             <span class="block text-[10rem]">:(</span>
             <p class="text-4xl leading-[1.73] font-light">
@@ -53,7 +53,7 @@
             </p>
             <span id="status-2" class="block text-3xl font-light mt-7">0% complete</span>
             <div class="flex flex-row flex-nowrap mt-5 h-max">
-                <section class="flex flex-row gap-2 h-full overflow-hidden">
+                <section class="flex flex-row flex-wrap gap-2 h-full overflow-hidden">
                     <div class="bg-white p-2 w-32 aspect-square overflow-hidden">
                         <img src="./assets/img/qrcode.png" class="w-full h-full object-cover" alt="">
                     </div>
@@ -67,7 +67,7 @@
                 </section>
             </div>
         </section>
-        <section class="flex flex-col items-center justify-center">
+        <section class="hidden md:flex flex-col items-center justify-center">
             <div class="h-full flex w-full">
                 <img src="./assets/img/image.png" alt="">
             </div>
@@ -75,7 +75,7 @@
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
-    <script src="./assets/js/main.js" type="application/javascript"></script>
+    <!-- <script src="./assets/js/main.js" type="application/javascript"></script> -->
 </body>
 
 
