@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <title>Atualização do windows</title>
+    <style>
+        ::-webkit-scrollbar {
+            appearance: none;
+            background-color: #0A599B;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0A599B] grid place-items-center min-h-screen cursor-none select-none" oncontextmenu="return false" ondrop="return false" ondragstart="return false">
+    <section id="t1" class="text-white flex flex-col items-center justify-center gap-4">
+
+        <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" class="lds-microsoft" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0)"><circle cx="81.73413361164941" cy="74.35045716034882" fill="#ffffff" r="5" transform="rotate(340.001 49.9999 50)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="0s"/>
+              </circle><circle cx="74.35045716034882" cy="81.73413361164941" fill="#ffffff" r="5" transform="rotate(348.352 50.0001 50.0001)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.0625s"/>
+              </circle><circle cx="65.3073372946036" cy="86.95518130045147" fill="#ffffff" r="5" transform="rotate(354.236 50 50)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.125s"/>
+              </circle><circle cx="55.22104768880207" cy="89.65779445495241" fill="#ffffff" r="5" transform="rotate(357.958 50.0002 50.0002)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.1875s"/>
+              </circle><circle cx="44.77895231119793" cy="89.65779445495241" fill="#ffffff" r="5" transform="rotate(359.76 50.0064 50.0064)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.25s"/>
+              </circle><circle cx="34.692662705396415" cy="86.95518130045147" fill="#ffffff" r="5" transform="rotate(0.183552 50 50)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.3125s"/>
+              </circle><circle cx="25.649542839651176" cy="81.73413361164941" fill="#ffffff" r="5" transform="rotate(1.86457 50 50)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.375s"/>
+              </circle><circle cx="18.2658663883506" cy="74.35045716034884" fill="#ffffff" r="5" transform="rotate(5.45126 50 50)">
+                <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s" begin="-0.4375s"/>
+              </circle><animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;0 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.5s"/></g></svg>
+        </figure>
+
+        <div class="flex flex-col gap-1 text-center text-2xl font-light">
+            <p>Trabalhando nas atualizações <span id="status">0%</span></p>
+            <p>Não desligue o computador. Isso pode demorar um pouco.</p>
+        </div>
+    </section>
+
+    <section id="t2" class="container text-white flex flex-row flex-nowrap gap-4 items-center justify-between hidden">
+        <section class="flex flex-col gap-1">
+            <span class="block text-[10rem]">:(</span>
+            <p class="text-4xl leading-[1.73] font-light">
+                Your PC ran into a problem and needs to restart. We're <br>
+                just collecting some error info, and then we'll restart for <br>
+                you.
+            </p>
+            <span id="status-2" class="block text-3xl font-light mt-7">0% complete</span>
+            <div class="flex flex-row flex-nowrap mt-5 h-max">
+                <section class="flex flex-row gap-2 h-full overflow-hidden">
+                    <div class="bg-white p-2 w-32 aspect-square overflow-hidden">
+                        <img src="./assets/img/qrcode.png" class="w-full h-full object-cover" alt="">
+                    </div>
+                    <div class="flex flex-col justify-between text-white font-ligh">
+                        <p>For more information about this issue and possible fixes, visit https://www.windows.com/stopcode</p>
+                        <div class="flex flex-col justify-end h-full gap-3 font-extralight">
+                            <p>If you call a support person, give them this info:</p>
+                            <p>Stop code: CRITICAL PROCESS DIED</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="flex flex-col items-center justify-center">
+            <div class="h-full flex w-full">
+                <img src="./assets/img/image.png" alt="">
+            </div>
+        </section>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <script src="./assets/js/main.js" type="application/javascript"></script>
+</body>
+
+
+</html>
